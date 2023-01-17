@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Who am I</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -58,10 +58,11 @@
             <div class="container">
                 <!-- About Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase">Who am I?</h2>
+                
 
                 <!-- About Section Content-->
                 <div class="row  text-center">
-                    <<div class="container">
+                    <div class="container">
                         <div class="row">
                             <div class="mr-auto ml-auto">
                                 <h5 class="description">My name is Mitchell Zinck. I am currently attending Carleton University in Ottawa where I am taking a Bachelors of Information Technoligy with a specialization in Optical Systems and Sensors</h5>
@@ -74,11 +75,11 @@
                             <div class="col-md-3">
                                 <div class="info">
                                     <div class="icon icon-danger ">
-                                        <i class="devicon-angularjs-plain colored devicon-sizing"></i>
+                                        <i class="devicon-c-plain colored devicon-sizing"></i>
                                     </div>
                                     <br/>
                                     <div class="description">
-                                        <h4 class="info-title">Angular</h4>
+                                        <h4 class="info-title">C</h4>
                                     </div>
                                 </div>
                             </div>
@@ -116,6 +117,53 @@
                                 </div>
                             </div>
                         </div>
+                        <br/><br/>  
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="info">
+                                    <div class="icon icon-danger ">
+                                        <i class="devicon-angularjs-plain colored devicon-sizing"></i>
+                                    </div>
+                                    <br/>
+                                    <div class="description">
+                                        <h4 class="info-title">Angular</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="info">
+                                    <div class="icon icon-danger">
+                                        <i class="devicon-typescript-plain colored devicon-sizing"></i>
+                                    </div>
+                                    <br/>
+                                    <div class="description">
+                                        <h4 class="info-title">TypeScript</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="info">
+                                    <div class="icon icon-danger">
+                                        <i class="devicon-html5-plain colored devicon-sizing"></i>
+                                    </div>
+                                    <br/>
+                                    <div class="description">
+                                        <h4 class="info-title">HTML</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="info">
+                                    <div class="icon icon-danger">
+                                        <i class="devicon-css3-plain colored devicon-sizing"></i>
+                                    </div>
+                                    <br/>
+                                    <div class="description">
+                                        <h4 class="info-title">CSS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,13 +174,7 @@
         <section class="page-section bg-primary portfolio" id="portfolio">
             <div class="container">
                 <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Projects</h2>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
                     <!-- Portfolio Item 1-->
@@ -198,22 +240,9 @@
             <div class="container">
                 <!-- Contact Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
                         <form id="contactForm" action="https://formsubmit.co/8dd401dad70fbc2317eeed90a9ff018d" method="POST">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
@@ -235,18 +264,12 @@
                                 <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                             </div>
                             <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
                             <div class="d-none" id="submitSuccessMessage">
                                 <div class="text-center mb-3">
                                     <div class="fw-bolder">Form submission successful!</div>
                                 </div>
                             </div>
                             <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                             <!-- Submit Button-->
                             <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
