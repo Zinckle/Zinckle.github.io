@@ -245,35 +245,33 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8 col-xl-7">
                         <form id="contactForm" action="https://formsubmit.co/8dd401dad70fbc2317eeed90a9ff018d" method="POST">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            <input type="text" name="_honey" style="display: none;">
+
+                    <!--Dissable Captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Name</label>
+                            <div class="input-group">
+
+                                <input type="text" name="name" class="form-control" placeholder="Name">
                             </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label>Email</label>
+                            <div class="input-group">
+
+                                <input type="email" name="email" class="form-control" placeholder="Email">
                             </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl" id="submitButton" type="submit">Send</button>
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea class="form-control" type="text" name="message" style="height: 10rem" placeholder="Tell us your thoughts and feelings..."></textarea>
+                    <div class="row">
+                        <div class="col-md-3 mr-auto ml-auto">
+                            <button class="btn btn-primary btn-xl">Send Message</button>
+                        </div>
+                    </div>
                         </form>
                     </div>
                 </div>
