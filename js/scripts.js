@@ -52,3 +52,18 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('icon-show');
+        }
+        else {
+            entry.target.classList.remove('icon-show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.icon-hidden')
+hiddenElements.forEach((el) => observer.observe(el));
