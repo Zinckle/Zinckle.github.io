@@ -11433,6 +11433,9 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .masthead .masthead-heading {
   font-size: 2.75rem;
@@ -11543,3 +11546,36 @@ html {
     transition-delay: 450ms;
   }
 }
+
+.project-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+ }
+ 
+ .project-show {
+   opacity: 1;
+   filter: blur(0px);
+   transform: translateX(0);
+ 
+ }
+ 
+ @media(prefers-reduced-motion) {
+   .project-hidden {
+     transition: none;
+   }
+ }
+ 
+ @media screen and (min-width: 640px) {
+   .project-hidden:nth-child(2) {
+     transition-delay: 150ms;
+   }
+   .project-hidden:nth-child(3) {
+     transition-delay: 300ms;
+   }
+   .project-hidden:nth-child(4) {
+     transition-delay: 450ms;
+   }
+ }
+  

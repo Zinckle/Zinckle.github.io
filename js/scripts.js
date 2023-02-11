@@ -67,3 +67,18 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.icon-hidden')
 hiddenElements.forEach((el) => observer.observe(el));
+
+const projectObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('project-show');
+        }
+        else {
+            entry.target.classList.remove('project-show');
+        }
+    });
+});
+
+const hiddenProjectElements = document.querySelectorAll('.project-hidden')
+hiddenProjectElements.forEach((el) => projectObserver.observe(el));
