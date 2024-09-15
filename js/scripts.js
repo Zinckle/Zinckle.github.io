@@ -78,7 +78,6 @@ const projectObserver = new IntersectionObserver((entries) => {
     });
 });
 
-const hiddenProjectElements = document.querySelectorAll('.project-hidden')
 hiddenProjectElements.forEach((el) => projectObserver.observe(el));
 
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
