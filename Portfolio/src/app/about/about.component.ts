@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, SecurityContext } from '@angular/core';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { map } from 'rxjs/operators';
 import { AsyncPipe } from '@angular/common';
@@ -7,7 +7,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-
 
 @Component({
   selector: 'app-about',
@@ -18,7 +17,7 @@ import { MatCardModule } from '@angular/material/card';
     MatMenuModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
