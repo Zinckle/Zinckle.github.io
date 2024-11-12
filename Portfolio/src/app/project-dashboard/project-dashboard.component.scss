@@ -1,0 +1,13 @@
+.grid-container {
+  padding: 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  gap: 16px; /* Space between items */
+}
+
+.grid-item {
+  width: 100%;
+}
