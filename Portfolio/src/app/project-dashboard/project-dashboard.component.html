@@ -1,15 +1,15 @@
-<div class="grid-container">
+<div class="grid-container pt-5">
   <h1 class="mat-h1">Projects</h1>
   <div class="grid">
     @for (card of cards; track card) {
-      <div class="grid-item">
+      <div class="grid-item pb-5 px-2">
         <app-project-card
           [cardTitle]="card.title"
           [imageSrc]="card.image"
           [description]="card.description"
           [githubLink]="card.githubLink"
           [pageLink]="card.pageLink"
-          >
+        >
         </app-project-card>
       </div>
     }

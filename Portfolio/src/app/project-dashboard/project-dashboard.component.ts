@@ -13,7 +13,6 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
   selector: 'app-project-dashboard',
   standalone: true,
   imports: [
-    AsyncPipe,
     MatGridListModule,
     MatMenuModule,
     MatIconModule,
