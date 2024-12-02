@@ -28,7 +28,7 @@ export class ProjectDashboardComponent {
 
   cards = [
         { title: 'Emojle',
-          image: 'assets/Aspect-ratio-4x3.svg.png',
+          image: 'assets/emojle.jpg',
           description: '',
           githubLink: 'https://github.com/Zinckle/Emoji-Wordle',
           pageLink: 'https://emojle.zinck.xyz/',
