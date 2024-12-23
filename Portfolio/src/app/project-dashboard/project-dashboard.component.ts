@@ -29,7 +29,7 @@ export class ProjectDashboardComponent {
   cards = [
         { title: 'Emojle',
           image: 'assets/emojle.jpg',
-          description: '',
+          description: 'Emojle is an emoji-based guessing game similar to Wordle, the objective is to guess the correct emoji based on feedback on previous guesses. Start by selecting any emoji and use the information you get from that guess to try and find the emoji of the day!',
           githubLink: 'https://github.com/Zinckle/Emoji-Wordle',
           pageLink: 'https://emojle.zinck.xyz/',
           cols: 1, rows: 2 },
@@ -49,10 +49,10 @@ export class ProjectDashboardComponent {
           cols: 1, rows: 2 },
 
         { title: 'ZinckLib',
-          image: 'assets/Aspect-ratio-4x3.svg.png',
-          description: '',
+          image: 'assets/ZinckLib.png',
+          description: 'The main focus of this library is around the manipulation of strings between various forms like strings to numbers or converting a number to its written form. There are also some other tools like creating a list of prime numbers less than a given value or determining if a string is in alphabetical order.',
           githubLink: 'https://github.com/Zinckle/ZinckLib',
-          pageLink: '',
+          pageLink: 'https://pypi.org/project/ZinckLib/',
           cols: 1, rows: 2 }
       ];
 }

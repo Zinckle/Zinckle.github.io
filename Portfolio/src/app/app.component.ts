@@ -3,13 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AboutComponent } from "./about/about.component";
 import { ProjectDashboardComponent } from "./project-dashboard/project-dashboard.component";
-import { ProjectCardComponent } from "./project-card/project-card.component";
+import { LandingComponent } from "./landing/landing.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
-    MatSlideToggleModule, AboutComponent, ProjectDashboardComponent, ProjectCardComponent],
+    MatSlideToggleModule, AboutComponent, ProjectDashboardComponent, LandingComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
