@@ -1,0 +1,22 @@
+<mat-card class="">
+  <mat-card-header>
+    <mat-card-title class="cardTitle">
+      {{cardTitle}}
+    </mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="col">
+    <img src="{{imageSrc}}" alt="Image" class="img"/>
+    <div class="pb-3">
+      {{description}}
+    </div>
+    <div class="d-flex justify-content-end">
+      <!-- Conditionally render "Try It Out" button if pageLink has a value -->
+      <a *ngIf="pageLink" [href]="pageLink" target="_blank" class="button-link pe-2">
+        <button type="button" class="gh-button" name="gh-button">Try It Out</button>
+      </a>
+      <a *ngIf="githubLink" [href]="githubLink" target="_blank" class="button-link ps-2">
+        <button type="button" class="gh-button" name="gh-button">Github</button>
+      </a>
+    </div>
+  </mat-card-content>
+</mat-card>
