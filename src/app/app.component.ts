@@ -14,5 +14,5 @@ import { LandingComponent } from "./landing/landing.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title = 'Mitchell Zinck';
 }
